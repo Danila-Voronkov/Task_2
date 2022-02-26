@@ -22,6 +22,7 @@ namespace Lesson2 {
                         $"Путь:           {Оbj.PathInFile}\n");
     }
   }
+  
   class MSWord : Document {
     public MSWord() {
       Name       = "Курсовая";
@@ -32,6 +33,7 @@ namespace Lesson2 {
     }
     public static MSWord MSWordFile;
   }
+  
   class TXT : Document {
     public TXT() {
       Name       = "Чит коды ГТА";
@@ -42,6 +44,7 @@ namespace Lesson2 {
     }
     public static TXT TXTFile;
   }
+  
   class MSExcel : Document {
     public MSExcel() {
       Name       = "Считаем доходы и расходы";
@@ -74,6 +77,7 @@ namespace Lesson2 {
     }
     private static HTML HTMLFile;
   }
+  
   class Singleton {
     public static Singleton Instance {
       get
@@ -116,6 +120,7 @@ namespace Lesson2 {
       Document.Print(Doc);
     }
   }
+  
   class HelloWorld {
     static void Main() {
       while (true) {
